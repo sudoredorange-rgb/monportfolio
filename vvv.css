@@ -1,0 +1,118 @@
+/* Reset de base */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-size: 16px;
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: "Inter", "Segoe UI", sans-serif;
+  line-height: 1.6;
+  color: #f0f0f0;
+  background: radial-gradient(circle at top, #680707, #000);
+}
+
+/* Navigation */
+header nav {
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  padding: 1rem;
+  background: rgba(255, 255, 255, 0.05);
+  backdrop-filter: blur(6px);
+}
+
+header nav a {
+  color: #9ddcff;
+  text-decoration: none;
+  font-weight: 500;
+  transition: color 0.3s ease;
+}
+
+header nav a:hover {
+  color: #fff;
+}
+
+/* Titres */
+h1, h2, h3 {
+  font-weight: 700;
+  color: #0bba25f5;
+  margin-bottom: 1rem;
+}
+
+section {
+  padding: 3rem 2rem;
+  max-width: 1200px;
+  margin: auto;
+}
+
+/* Projets */
+article {
+  margin-bottom: 3rem;
+  background: rgba(50, 220, 20, 0.05);
+  border-radius: 12px;
+  padding: 1.5rem;
+  transition: transform 0.3s ease;
+}
+
+article:hover {
+  transform: translateY(-6px);
+}
+
+figure {
+  margin-top: 1rem;
+}
+
+figure img {
+  width: 100%;
+  border-radius: 10px;
+  box-shadow: 0 0 20px rgba(0, 200, 255, 0.3);
+  transition: transform 0.4s ease;
+}
+
+figure img:hover {
+  transform: scale(1.03);
+}
+
+/* Galerie */
+#galerie ul {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 2rem;
+  list-style: none;
+}
+
+#galerie li {
+  background: rgba(191, 83, 11, 0.05);
+  border-radius: 12px;
+  padding: 1rem;
+  transition: transform 0.3s ease;
+}
+
+#galerie li:hover {
+  transform: translateY(-5px);
+}
+
+/* Contact */
+form {
+  display: grid;
+  gap: 1rem;
+  max-width: 500px;
+}
+
+input, textarea, button {
+  padding: 0.8rem;
+  border-radius: 8px;
+  border: none;
+  font-size: 1rem;
+}
+
+input, textarea {
+  background
